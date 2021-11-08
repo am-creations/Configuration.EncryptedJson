@@ -7,7 +7,7 @@
         <ToolCommandName>conf-encrypt</ToolCommandName>
         <AssemblyName>cont-encrypt</AssemblyName>
         <PackageOutputPath>./nupkg</PackageOutputPath>
-        <PackageIcon>logo.png</PackageIcon>
+        <PackageIcon>icon.png</PackageIcon>
         <PackageId>AmCreations.Configuration.EncryptedJson.Cli</PackageId>
         <Authors>AM-Créations</Authors>
         <Product>AM-Créations configuration encrypter CLI tool</Product>
@@ -19,7 +19,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <None Include="logo.png" Pack="True" />
+        <None Include="..\..\images\icon.png" Pack="true" PackagePath=""/>
     </ItemGroup>
 
     <ItemGroup>
