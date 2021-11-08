@@ -1,0 +1,14 @@
+﻿@using Microsoft.Extensions.Configuration
+@inject IConfiguration _configuration
+@{
+    ViewData["Title"] = "Home Page";
+}
+<h2>Welcome</h2>
+<p>This library is used to encrypt sections of a JSON configuration file.</p>
+
+<h2>How does it work ?</h2>
+<p>This library is used to encrypt sections of a JSON configuration file.</p>
+
+<h2>Examples:</h2>
+<p>Value of "SomeKey:SomeSubKey":</p>
+<code>@(_configuration.GetValue<string>("SomeKey:SomeSubKey"))</code>
