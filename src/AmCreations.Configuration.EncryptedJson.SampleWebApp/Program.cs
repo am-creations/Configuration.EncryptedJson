@@ -21,7 +21,7 @@ namespace AmCreations.Configuration.EncryptedJson.SampleWebApp
                         .AddJsonFile($"appsettings.{hostingContext.HostingEnvironment.EnvironmentName}.json", true)
                         
                         // Encrypted configuration
-                        .AddEncryptedJsonFile("appsettings.Encrypted.json", new FilesystemCertificateLoader("cert.pfx"));
+                        .AddEncryptedJsonFile("appsettings.Encrypted.json", new FilesystemCertificateLoader("Certificates/certificate.pfx"));
                 })
                 .ConfigureWebHostDefaults(webBuilder => { webBuilder.UseStartup<Startup>(); });
     }

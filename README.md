@@ -50,7 +50,7 @@ To generate a certificate you could use the following commands:
 ```shell
 openssl genrsa 2048 > private.key
 openssl req -new -x509 -nodes -sha1 -days 365 -key private.key > public.cer
-openssl pkcs12 -export -in public.cer -inkey private.key -out cert.pfx
+openssl pkcs12 -export -in public.cer -inkey private.key -out cert.pfx -passout pass:
 ```
 
 ### Loading the encrypted JSON configuration

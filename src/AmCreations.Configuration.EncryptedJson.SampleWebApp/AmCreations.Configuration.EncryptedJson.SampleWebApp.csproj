@@ -5,7 +5,11 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\AmCreations.Configuration.EncryptedJson\AmCreations.Configuration.EncryptedJson.csproj" />
+        <None Include="Certificates/**" CopyToOutputDirectory="PreserveNewest" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\AmCreations.Configuration.EncryptedJson\AmCreations.Configuration.EncryptedJson.csproj" />
     </ItemGroup>
 
 </Project>

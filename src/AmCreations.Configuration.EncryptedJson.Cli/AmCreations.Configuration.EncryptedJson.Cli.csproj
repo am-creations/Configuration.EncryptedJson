@@ -23,11 +23,11 @@
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="3.1.0" />
+        <PackageReference Include="McMaster.Extensions.CommandLineUtils" Version="3.1.0"/>
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\AmCreations.Configuration.EncryptedJson\AmCreations.Configuration.EncryptedJson.csproj" />
+        <ProjectReference Include="..\AmCreations.Configuration.EncryptedJson\AmCreations.Configuration.EncryptedJson.csproj"/>
     </ItemGroup>
 
 </Project>
