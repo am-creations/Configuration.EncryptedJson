@@ -11,6 +11,7 @@ ProjectSection(SolutionItems) = preProject
 	.gitignore = .gitignore
 	LICENSE = LICENSE
 	README.md = README.md
+	Directory.Build.props = Directory.Build.props
 EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmCreations.Configuration.EncryptedJson.Tests", "tests\AmCreations.Configuration.EncryptedJson.Tests\AmCreations.Configuration.EncryptedJson.Tests.csproj", "{BD7DE993-E970-4237-9C58-66F8A15943AD}"

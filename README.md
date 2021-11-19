@@ -19,22 +19,22 @@ available for projects that can't be connected to the internet.
 * Access the encrypted values the same way you are used to in your .NET Core applications.
 * Lets you share config files or even check them in in your VCS without the need to remove sensitive information.
 * The configuration file is not fully encrypted, only its **string** values, so you are aware 
-* of which values are overriden and you don't need to have the full **unencrypted** file to add or change a key. 
+  of which values are overriden and you don't need to have the full **unencrypted** file to add or change a key. 
 
 ## Installation
 
-You can install the package via the NuGet Package Manager by searching for `AMCreations.Configuration.EncryptedJson`.
+You can install the package via the NuGet Package Manager by searching for `AmCreations.Configuration.EncryptedJson`.
 
 You can also install the package via PowerShell using the following command:
 
 ```ps
-Install-Package AMCreations.Configuration.EncryptedJson
+Install-Package AmCreations.Configuration.EncryptedJson
 ```
 
 or via the dotnet CLI:
 
 ```ps
-dotnet add package AMCreations.Configuration.EncryptedJson
+dotnet add package AmCreations.Configuration.EncryptedJson
 ```
 
 ## Getting started
@@ -79,7 +79,7 @@ Then paste the encrypted value in the appsettings file (here next to "Main").
 Add the following to your `Program.cs` file:
 
 ```csharp
-using AMCreations.Configuration.EncryptedJson;
+using AmCreations.Configuration.EncryptedJson;
 ```
 
 The encrypted JSON configuration can be loaded from a file in your `Program.cs` like this:
