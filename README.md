@@ -1,4 +1,4 @@
-# AM-Créations configuration encrypter
+# AM-Créations configuration encrypter [![NuGet downloads](https://img.shields.io/nuget/dt/AmCreations.Configuration.EncryptedJson.svg)](https://www.nuget.org/packages/AmCreations.Configuration.EncryptedJson/) 
 
 ## What is AM-Créations configuration encrypter
 
