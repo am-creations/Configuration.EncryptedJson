@@ -8,7 +8,7 @@
         <RepositoryUrl>https://github.com/am-creations/Configuration.EncryptedJson</RepositoryUrl>
         <Company>AM-Créations</Company>
         <PackageTags>config appsettings encryption tool netcore</PackageTags>
-        <Version>1.0.0-alpha</Version>
+        <Version>1.0.0-alpha2</Version>
     </PropertyGroup>
 
 </Project>

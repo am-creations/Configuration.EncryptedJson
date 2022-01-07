@@ -16,25 +16,7 @@ namespace AmCreations.Configuration.EncryptedJson
         /// </summary>
         /// <param name="source">The source settings.</param>
         public EncryptedJsonConfigurationProvider(EncryptedJsonConfigurationSource source) : base(source) { }
-
-        /// <summary>
-        /// Loads JSON configuration key/values from a stream into a provider.
-        /// </summary>
-        public override void Load()
-        {
-            var source = (EncryptedJsonConfigurationSource)Source;
-
-            try
-            {
-                var crypter = new RsaCrypter(source.CertificateLoader);
-                Data = EncryptedJsonConfigurationFileParser.Parse(source.Path, crypter);
-            }
-            catch (JsonException e)
-            {
-                throw new FormatException("Could not parse the encrypted JSON file", e);
-            }
-        }
-
+        
         /// <summary>
         /// Loads JSON configuration key/values from a stream into a provider.
         /// </summary>
