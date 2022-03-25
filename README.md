@@ -71,7 +71,7 @@ Now you need to encrypt the value used in "ConnectionStrings:Main", you'll need 
 This will output the encrypted value of "Content To Encode"
 
 ```shell
-cont-encrypt encrypt "/path/to/the/public-key-or-certificate" "Content To Encode"
+conf-encrypt encrypt "/path/to/the/public-key-or-certificate" "Content To Encode"
 ```
 
 Then paste the encrypted value in the appsettings file (here next to "Main").

@@ -4,7 +4,7 @@
         <OutputType>Exe</OutputType>
         <PackAsTool>true</PackAsTool>
         <ToolCommandName>conf-encrypt</ToolCommandName>
-        <AssemblyName>cont-encrypt</AssemblyName>
+        <AssemblyName>conf-encrypt</AssemblyName>
         <Product>AM-Créations configuration encrypter CLI tool</Product>
     </PropertyGroup>
 
