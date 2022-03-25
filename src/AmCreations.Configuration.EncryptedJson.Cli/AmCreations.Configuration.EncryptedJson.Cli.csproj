@@ -6,7 +6,13 @@
         <ToolCommandName>conf-encrypt</ToolCommandName>
         <AssemblyName>conf-encrypt</AssemblyName>
         <Product>AM-Créations configuration encrypter CLI tool</Product>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
+
+
+    <ItemGroup>
+        <None Include="..\..\README.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
 
     <ItemGroup>
         <None Include="..\..\images\icon.png" Pack="true" PackagePath=""/>

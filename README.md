@@ -66,9 +66,15 @@ containing only the values you need to encrypt, for example :
 }
 ```
 
-Now you need to encrypt the value used in "ConnectionStrings:Main", you'll need to use the CLI tool : 
+Now you need to encrypt the value used in "ConnectionStrings:Main", you'll need to install locally or globally [the conf-encrypt CLI tool, available on NuGet](https://www.nuget.org/packages/conf-encrypt/).
 
-This will output the encrypted value of "Content To Encode"
+To install it globally :
+
+```shell
+dotnet tool install -g conf-encrypt
+```
+
+And then run it : this will output the encrypted value of "Content To Encode"
 
 ```shell
 conf-encrypt encrypt "/path/to/the/public-key-or-certificate" "Content To Encode"
