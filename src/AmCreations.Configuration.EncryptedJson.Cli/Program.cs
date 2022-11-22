@@ -32,6 +32,22 @@ namespace AmCreations.Configuration.EncryptedJson.Cli
                     Console.WriteLine(crypter.EncryptString(data.Value));
                 });
             });
+            
+            app.Command("decrypt", decryptCmd =>
+            {
+                decryptCmd.Description = "Decrypts data using the certificates private key.";
+                    
+                var cert = decryptCmd.Argument("cert", "Certificate file (or private key)").IsRequired();
+                var data = decryptCmd.Argument("content", "Content to decrypt").IsRequired();
+                
+                decryptCmd.OnExecute(() =>
+                {
+                    var loader = new FilesystemCertificateLoader(cert.Value);
+                    var crypter = new RsaCrypter(loader);
+
+                    Console.WriteLine(crypter.DecryptString(data.Value));
+                });
+            });
 
             app.OnExecute(() =>
             {

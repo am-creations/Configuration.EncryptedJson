@@ -104,6 +104,14 @@ classical `AddJsonFile` method).
 You can now access your application's settings by injecting `IConfiguration` or `IOptions` in your 
 classes, [as usual](https://docs.microsoft.com/aspnet/core/fundamentals/configuration/#appsettingsjson).
 
+### Other commands
+
+To decrypt a specific value: this will output the decrypted value of "Content To Decode"
+
+```shell
+conf-encrypt decrypt "/path/to/the/private-key-or-certificate" "Content To Decode"
+```
+
 ## Credits 
 
 This library is based on the libraries :
